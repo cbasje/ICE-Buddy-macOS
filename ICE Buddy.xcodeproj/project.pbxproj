@@ -28,6 +28,7 @@
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
+		669ED58B2AD547FA0015E573 /* NedSpoorConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 669ED58A2AD547FA0015E573 /* NedSpoorConnect */; };
 		B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A1287F2F15007C0D57 /* DBConnect */; };
 		B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A3287F2F15007C0D57 /* DBTimetable */; };
 		B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A5287F2F15007C0D57 /* SNCFConnect */; };
@@ -87,6 +88,7 @@
 				B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */,
 				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
 				B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */,
+				669ED58B2AD547FA0015E573 /* NedSpoorConnect in Frameworks */,
 				B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */,
 				B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */,
 				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
@@ -207,6 +209,7 @@
 				B33E70A3287F2F15007C0D57 /* DBTimetable */,
 				B33E70A5287F2F15007C0D57 /* SNCFConnect */,
 				B33E70A7287F2F15007C0D57 /* TrainConnect */,
+				669ED58A2AD547FA0015E573 /* NedSpoorConnect */,
 			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
@@ -521,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 15;
-				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				DEVELOPMENT_TEAM = PNPTQ529YH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					FredKit/UI/FredKitSimpleDetailDisclosureTableViewCell.xib,
@@ -530,6 +533,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -555,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 15;
-				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				DEVELOPMENT_TEAM = PNPTQ529YH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					tripInfo2.json,
@@ -566,6 +570,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -762,6 +767,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
+		};
+		669ED58A2AD547FA0015E573 /* NedSpoorConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NedSpoorConnect;
 		};
 		B33E70A1287F2F15007C0D57 /* DBConnect */ = {
 			isa = XCSwiftPackageProductDependency;

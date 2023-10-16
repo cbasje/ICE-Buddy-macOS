@@ -68,7 +68,7 @@ class JourneyStopCustomViewController: NSViewController {
         
         self.stopNameLabel.stringValue = stop.trainStation.name
         if let track = stop.trainTrack?.actual {
-            self.trackLabel.stringValue = "Gleis \(track)"
+            self.trackLabel.stringValue = "Track \(track)"
         } else {
             self.trackLabel.stringValue = ""
         }

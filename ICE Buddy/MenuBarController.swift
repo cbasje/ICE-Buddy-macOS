@@ -11,9 +11,10 @@ import LaunchAtLogin
 import FredKit
 import UserNotifications
 import StoreKit
-import DBConnect
 import TrainConnect
+import DBConnect
 import SNCFConnect
+import NedSpoorConnect
 
 let demoMode: Bool = false
 
@@ -23,7 +24,8 @@ class MenuBarController: NSObject {
     
     let dataController = CombinedDataController(controllers:
                                                 ICEDataController.shared,
-                                                TGVDataController.shared
+                                                TGVDataController.shared,
+                                                NedSpoorDataController.shared
     )
     
     private var iceStatusItem: NSStatusItem?
