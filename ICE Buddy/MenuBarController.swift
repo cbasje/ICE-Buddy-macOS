@@ -307,20 +307,12 @@ class MenuBarController: NSObject {
     
     @objc func openWifiLogin() {
         let url = URL(string:"http://LogIn.WIFIonICE.de")!
-        NSWorkspace.shared.open([url],
-                                withAppBundleIdentifier:"com.apple.Safari",
-                                options: [],
-                                additionalEventParamDescriptor: nil,
-                                launchIdentifiers: nil)
+        NSWorkspace.shared.open(url)
     }
     
     @objc func hmuTwitter() {
         let url = URL(string:"https://twitter.com/frederikRiedel")!
-        NSWorkspace.shared.open([url],
-                                withAppBundleIdentifier:"com.apple.Safari",
-                                options: [],
-                                additionalEventParamDescriptor: nil,
-                                launchIdentifiers: nil)
+        NSWorkspace.shared.open(url)
     }
     
     let iceHeaderVC = ICEHeader()
