@@ -58,6 +58,7 @@ class JourneyStopCustomViewController: NSViewController {
         } else {
             self.delayLabel.isHidden = false
             self.delayLabel.stringValue = stop.departureDelay
+            self.arriveTimeLabel.textColor = NSColor.red;
         }
         
         if stop.trainStation.name == MenuBarController.ausstiegsAlarmStation {
